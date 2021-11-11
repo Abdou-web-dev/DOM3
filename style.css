@@ -1,0 +1,132 @@
+.small-img:hover, a:hover{
+    opacity: .8;
+}
+
+.content-up1:hover,.content-up2:hover,.content-up3:hover,.content-up4:hover{
+    opacity: .8;
+}
+
+body{
+    font-family: Roboto;
+}
+
+img:hover{
+    opacity: .8;
+    transform: scale(1.05);
+    transition: .5s ease;
+}
+
+img{
+    border-radius: 5px;
+}
+
+img.invertt:hover{
+    filter: invert(1);
+}
+
+/*creating the shake animation*/
+/* Y axis */
+
+div.shake:hover .content-up1,.shake:hover .content-up3{
+    animation: shake 0.8s;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateY(0)
+    }
+
+    25% {
+        transform: translateY(20px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* X axis */
+.shake2:hover .content-up2, .shake2:hover .content-up4 {
+    animation: shake2 0.8s;
+}
+
+@keyframes shake2 {
+    0% {
+        transform: translateX(0)
+    }
+
+    25% {
+        transform: translateX(20px);
+    }
+
+    50% {
+        transform: translateX(-15px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.line2 , .line4{
+    background-color: purple;
+    height: 4;
+}
+
+section .lines div div div.linetop:hover{
+    opacity: .7;
+    transform: scale(1.1);
+    transition: 0.1s ease;
+}
+section .lines div div div.linetop{
+    border-radius: 15px;
+}
+
+.collapse-col1:hover{
+    background-color: beige;
+    padding-left: 50;
+    padding-right: 50;
+    padding-top: 70;
+    padding-bottom: 70;
+    transition: .9s ease;
+    border-radius: 20px;
+    border: .15px solid beige;
+}
+
+.collapse-col2:hover{
+    background-color: rgb(230, 230, 146);
+    padding-left: 50;
+    padding-right: 50;
+    padding-top: 70;
+    padding-bottom: 70;
+    transition: 1.5s ease all;
+    border-radius: 20px;
+    border: .15px solid beige;
+}
+
+.collapse-col3:hover{
+    background-color: rgba(230, 194, 146, 0.61);
+    padding-left: 50;
+    padding-right: 50;
+    padding-top: 70;
+    padding-bottom: 70;
+    transition: 2s ease all;
+    border-radius: 20px;
+    border: .15px solid beige;
+}
+
+section div.section-top{
+    background-color: rgba(211, 211, 211, 0.507);
+}
+section div.section-top:hover{
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+section .section2{
+    display: block;
+    transition: all ease 4s;
+}
